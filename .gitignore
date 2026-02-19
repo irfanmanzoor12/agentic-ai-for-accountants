@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Docusaurus build output
+build/
+.docusaurus/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*

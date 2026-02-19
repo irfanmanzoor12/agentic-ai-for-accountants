@@ -1,0 +1,12 @@
+{
+  "label": "Part 1: Your Personal AI Skills",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Part 1: Your Personal AI Skills",
+    "description": "Chapters 1–5: The five skills you need to talk to AI, direct AI, specify what AI should do, and verify what AI produces. No programming required.",
+    "slug": "/part-1"
+  }
+}

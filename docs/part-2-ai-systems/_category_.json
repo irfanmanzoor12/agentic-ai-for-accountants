@@ -1,0 +1,12 @@
+{
+  "label": "Part 2: Your Digital AI Team",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Part 2: Your Digital AI Team",
+    "description": "Chapters 6–15: How AI connects to your tools, performs accounting tasks, works as agents, operates in orchestrated teams, and is supervised, evaluated, and scaled. The complete Agent Factory model for accounting professionals.",
+    "slug": "/part-2"
+  }
+}

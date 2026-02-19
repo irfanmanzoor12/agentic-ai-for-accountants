@@ -1,55 +1,90 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+- Version change: 0.0.0 → 1.0.0
+- Added principles: I through VIII (initial constitution)
+- Added sections: Content Standards, Development Workflow
+- Templates requiring updates: ⚠ pending (first constitution — templates to be validated on first /sp.specify)
+-->
+
+# Agentic AI for Accounting Professionals — Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accountant-First, Always
+Every piece of content MUST be written for accounting professionals who have zero programming background. No code, no terminal commands, no technical jargon unless immediately explained with an accounting analogy. The litmus test: "Would a practicing accountant in Pakistan understand this without Googling?"
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Domain Authenticity
+All examples, exercises, and case studies MUST use real accounting scenarios — audit, tax (FBR/Pakistan), bookkeeping, financial reporting, IFRS, ICAP standards. Never use generic AI examples like "write me a poem" or "plan a vacation." Every concept is taught through the accounting lens.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Supervisor Mindset
+The book's core message: accountants become AI supervisors, not programmers. Every chapter MUST reinforce that the reader's role is to define intent (what "correct" looks like), direct AI agents, and verify output — not to build or code AI systems.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Concept Over Implementation
+Teach the WHAT and WHY, never the HOW-to-build. MCP is explained as "USB for AI," not as JSON schemas. Agents are explained as "digital accounting staff," not as Python classes. Orchestration is explained as "coordinating a team," not as code pipelines. Technical accuracy maintained, but abstracted for the audience.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Verification as Professional Duty
+Every chapter that shows AI producing output MUST include verification guidance. AI hallucinations in accounting have real consequences — wrong tax calculations, non-compliant disclosures, audit failures. The Accountant's AI Verification Checklist is a recurring element throughout the book.
 
-### [PRINCIPLE_6_NAME]
+### VI. Progressive Complexity
+Content flows from familiar to unfamiliar: Prompt Engineering (Week 1 skills) → Context Engineering (system thinking) → Agent Concepts (skills, agents, orchestration) → Business Transformation (Agent Factory thesis). Each chapter builds on the previous. No concept is introduced without its prerequisite being covered first.
 
+### VII. Spec-Driven Book Development
+This book is itself built using Spec-Driven Development. Every chapter starts as a specification (what it covers, learning objectives, key examples, exercises) before content is written. This serves dual purpose: quality book content AND a real-world demonstration of SDD principles taught in Chapter 4.
 
-[PRINCIPLE__DESCRIPTION]
+### VIII. Bilingual Accessibility
+Key terms and glossaries MUST include Roman Urdu translations. The book targets Pakistani accounting professionals who communicate daily in Roman Urdu. This is not full translation — it is key term glossary and concept explanations in Roman Urdu alongside English.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Content Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Book Structure
+- **Platform:** Docusaurus deployed on GitHub Pages
+- **Chapters:** 15 chapters aligned to the 15 teaching topics
+- **Each chapter contains:** Concept explanation, accounting analogy, real-world example, hands-on exercise, common mistakes, key takeaways, Roman Urdu glossary
+- **RAG Chatbot:** Embedded in the book site — readers can ask questions about content
+- **Source Materials:** Agent Factory Thesis, Prompt Engineering Course (Panaversity), Context Engineering Tutorial
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Quality Gates for Content
+- No unexplained technical terms — every term gets an accounting analogy on first use
+- No code blocks visible to the reader — all examples use natural language prompts and AI chat interfaces
+- Every AI-generated example MUST be verified against actual accounting standards (IFRS, FBR, ICAP)
+- Every chapter MUST have at least 2 hands-on exercises using ChatGPT or Claude (no other tools required)
+- Roman Urdu glossary of 5-10 key terms per chapter
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Writing Style
+- Simple, direct English (not academic)
+- Second person ("you") — speaking directly to the accountant reader
+- Short paragraphs (3-4 sentences max)
+- Tables and bullet points preferred over long prose
+- Accounting-specific action verbs: Analyze, Reconcile, Classify, Prepare, Calculate, Verify, Draft
+
+## Development Workflow
+
+### Book Development Pipeline
+1. **Constitution** (this document) — project principles and constraints
+2. **Specify** — chapter specification (learning objectives, key concepts, examples, exercises)
+3. **Plan** — chapter outline and content architecture
+4. **Tasks** — break chapter into writable sections
+5. **Implement** — write chapter content using Claude Code
+6. **Verify** — check against Content Standards quality gates
+
+### Technology Stack
+- **Book Site:** Docusaurus 3.x on GitHub Pages
+- **Development:** Claude Code with Spec-Kit Plus
+- **Skills:** From panaversity/claude-code-skills-lab (doc-coauthoring, pdf, xlsx, pptx)
+- **Version Control:** Git + GitHub
+- **Content Format:** Markdown (MDX where needed for interactive elements)
+
+### What This Project Does NOT Include
+- No Python, TypeScript, or any programming language in reader-facing content
+- No Kubernetes, Docker, or infrastructure topics
+- No building MCP servers, custom agents, or voice agents
+- No API development or database management
+- These topics exist in the Agent Factory book (Parts 4-9) but are explicitly out of scope for this accounting audience
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the authoritative source for all content and development decisions in this project. All chapters, exercises, and supplementary materials MUST comply with these principles. Amendments require documenting the change, rationale, and updating all affected content.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+When in doubt about whether content is appropriate for the target audience, apply Principle I: "Would a practicing accountant in Pakistan understand this without Googling?"
+
+**Version**: 1.0.0 | **Ratified**: 2026-02-18 | **Last Amended**: 2026-02-18
