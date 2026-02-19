@@ -7,12 +7,8 @@ const config: Config = {
   tagline: "From ChatGPT to AI Supervisors — A Non-Programmer's Guide",
   favicon: 'img/favicon.ico',
 
-  url: 'https://irfanmanzoor12.github.io',
-  baseUrl: '/agentic-ai-for-accountants/',
-
-  organizationName: 'irfanmanzoor12',
-  projectName: 'agentic-ai-for-accountants',
-  trailingSlash: false,
+  url: 'https://agentic-ai-for-accountants.vercel.app',  // update if Vercel assigns a different URL
+  baseUrl: '/',
 
   onBrokenLinks: 'warn',
 
