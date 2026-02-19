@@ -2,22 +2,17 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// UPDATE THESE when GitHub repository is created:
-// url: your GitHub Pages URL, e.g. https://your-username.github.io
-// baseUrl: '/' for user/org pages, or '/repo-name/' for project pages
-// organizationName: your GitHub username
-// projectName: your GitHub repository name
-
 const config: Config = {
   title: 'Agentic AI for Accounting Professionals',
   tagline: "From ChatGPT to AI Supervisors — A Non-Programmer's Guide",
   favicon: 'img/favicon.ico',
 
-  url: 'https://example.com',          // TODO: update with GitHub Pages URL
-  baseUrl: '/',
+  url: 'https://irfanmanzoor12.github.io',
+  baseUrl: '/agentic-ai-for-accountants/',
 
-  organizationName: 'your-github-username', // TODO: update
+  organizationName: 'irfanmanzoor12',
   projectName: 'agentic-ai-for-accountants',
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
 
